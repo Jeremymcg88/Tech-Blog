@@ -3,7 +3,6 @@ const sequelize = require('../config/connection');
 
 class Vote extends Model {}
 
-// Structures votes table
 Vote.init(
   {
     id: {
@@ -27,7 +26,6 @@ Vote.init(
     }
   },
   {
-    // Adds connection
     sequelize,
     timestamps: false,
     freezeTableName: true,

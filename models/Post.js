@@ -35,7 +35,7 @@ class Post extends Model {
     }
   }
   
-  // Creates posts table set up
+  // Creates tables 
   Post.init(
     {
       id: {
