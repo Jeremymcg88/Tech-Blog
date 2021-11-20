@@ -1,0 +1,44 @@
+<section>
+  <div class="flex justify-center">
+    <div class="grid grid-rows">
+    <div class="grid grid col-11 span-4">
+    {{!-- <div class="w-full max-w-xs"> --}}
+      <p class="col-span-12 w-80 bg-green-600 p-4 text-white font-bold text-xl text-center">Create New Post</p>
+      <form class="col-span-12 w-80 new-post-form bg-white shadow-md rounded px-6 pt-10 pb-6 mb-10">
+        <div class="mb-4 col-span-12">
+          <label for="post-title">Title</label>
+          <input class="w-full w-16 max-w-xs" type="text" id="post-title" name="post-title" />
+        </div>
+        <div class="mb-4 col-span-12">
+          <label for="content">Content</label>
+          <textarea class="resize w-full max-w-xs" id="content" name="content"></textarea>
+        </div>
+      <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-10 rounded focus:outline-none focus:shadow-outline" type="submit" class="btn">Create</button>
+      </form>
+      {{!-- </div> --}}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{#if posts.length}}
+<section>
+  <h2 class="border bg-gray-700 text-white text-center p-4 w-full">Your Posts</h2>
+  <div class="flex justify-center">
+    {{!-- <div class="grid grid-rows"> --}}
+      {{!-- <div class="grid grid-col"> --}}
+        <ol>
+          {{#each posts as |post|}}
+          <li>
+            {{> post-info post}}
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link text-center bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline">Edit post</a>
+          </li>
+          {{/each}}
+        </ol>
+      {{!-- </div> --}}
+    {{!-- </div> --}}
+  </div>
+</section>
+{{/if}}
+
+<script src="/javascript/add-post.js"></script>

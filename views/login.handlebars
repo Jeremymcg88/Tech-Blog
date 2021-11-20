@@ -1,1 +1,23 @@
-<script src="../public/Stylesheet/javascript/login.js"
+<div class="flex justify-center">
+    <div class="w-full max-w-xs">
+      <p class="bg-green-600 p-4 text-white font-bold text-xl text-center">Login</p>
+      <form class="login-form bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email-login">Email:</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" id="email-login" placeholder="johnsmith@email.com" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="password-login">Password:</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="password" id="password-login" placeholder="******************" />
+        </div>
+        <div class="flex items-center justify-center">
+          <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-10 rounded focus:outline-none focus:shadow-outline">LOGIN</button>
+        </div>
+        <div class="flex items-center justify-center">
+          <a href="/signup" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline">Sign up</a>
+        </div>
+      </form>
+    </div>
+</div>
+
+<script src="/javascript/login.js"></script>
