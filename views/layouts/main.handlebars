@@ -9,25 +9,25 @@
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-red-400">
+<body class="bg-red-600">
   <nav class="flex items-center justify-between flex-wrap bg-gray-900 p-6">
   <div class="flex items-center flex-shrink-0 text-white border-4 border-blue-400 border-double">
   <a href="/" class="font-semibold text-xl tracking-tight">Tech Blog</a>
     </div>
     <ul class="flex justify-between">
       <li class="mr-3">
-        <a class="inline-block border border-blue-400 rounded py-0 w-max mt-2 bg-red-400 hover:bg-black-400 text-white" href="/">HOME</a>
+        <a class="inline-block border border-blue-400 rounded py-0 w-max mt-2 bg-red-600 hover:bg-black-400 text-white" href="/">HOME</a>
       </li>
       {{#if loggedIn}}
       <li class="mr-3">
-        <a class="inline-block border border-blue-400 rounded py-0 w-max mt-2 bg-red-400 hover:bg-black-400 text-white" href="/dashboard">DASHBOARD</a>
+        <a class="inline-block border border-blue-400 rounded py-0 w-max mt-2 bg-red-600 hover:bg-black-400 text-white" href="/dashboard">DASHBOARD</a>
       </li>
       <li class="mr-3">
         <a id="logout" class="inline-block border border-blue-400 rounded py-0 w-max mt-2 bg-red-400 hover:bg-black-400 text-white" id="#logout">LOGOUT</a>
       </li>
       {{else}}
       <li class="mr-3">
-        <a class="inline-block border border-blue-400 rounded py-0 w-max mt-2 bg-red-400 hover:bg-black-400 text-white" href="/login">LOGIN</a>
+        <a class="inline-block border border-blue-400 rounded py-0 w-max mt-2 bg-red-600 hover:bg-black-400 text-white" href="/login">LOGIN</a>
       </li>
       {{/if}}
     </ul>
