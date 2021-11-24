@@ -83,6 +83,8 @@ If you have any questions please reach out to me via email at jeremy.mcguirk@gma
 
 ## Deployed
 
+https://umbc-tech-blog.herokuapp.com/
+
 ## Repository
 
 https://github.com/Jeremymcg88/PWA-budget-tracker-
