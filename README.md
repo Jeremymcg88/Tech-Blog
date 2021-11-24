@@ -87,6 +87,7 @@ https://umbc-tech-blog.herokuapp.com/
 
 ## Repository
 
-https://github.com/Jeremymcg88/PWA-budget-tracker-
+https://github.com/Jeremymcg88/Tech-Blog
+
 
 
